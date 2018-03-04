@@ -1,0 +1,62 @@
+/* General Styles */
+html {
+  font-size: 16px;
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+.offset {
+  position: relative;
+  top: 4rem;
+}
+/* Header Styles */
+header {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0.75rem;
+}
+
+.logo img {
+  height: 3rem;
+  width: auto;
+}
+
+nav {
+  margin-right: 0.75rem;
+  height: 100%;
+}
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  height: 100%;
+  transition: background-color 0.5s;
+}
+
+nav a:hover {
+  background-color: pink;
+}
+
+/* Troubleshooting Styles */
+.box {
+  border: 2px hotpink solid;
+}
