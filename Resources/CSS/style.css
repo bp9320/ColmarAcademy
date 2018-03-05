@@ -15,23 +15,38 @@ strong {
   font-weight: bolder;
 }
 
+.light-gray {
+color: hsl(47, 11%, 84%);
+}
+
 .offset {
   position: relative;
   top: 4rem;
 }
 /* Header Styles */
 header {
+  font-family: 'Kanit', sans-serif;
   height: 4rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: hsl(215, 17%, 40%);
+  z-index: 100;
 }
 
 .logo {
   display: flex;
   align-items: center;
   margin: 0.5rem 0.75rem;
+}
+
+.logo span {
+  font-weight: 300;
+}
+
+.logo span strong {
+  font-weight: 800;
 }
 
 .logo img {
@@ -47,13 +62,19 @@ nav {
 nav a {
   display: inline-flex;
   align-items: center;
+  font-weight: 500;
   padding: 0 0.5rem;
   height: 100%;
+  color: hsl(47, 11%, 84%);
   transition: background-color 0.5s;
 }
 
+nav a:last-child {
+  margin-right: 0.5rem;
+}
+
 nav a:hover {
-  background-color: pink;
+  background-color: hsl(215, 17%, 33%);
 }
 
 /* Troubleshooting Styles */
