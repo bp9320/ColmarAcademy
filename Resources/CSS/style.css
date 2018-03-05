@@ -15,6 +15,29 @@ strong {
   font-weight: bolder;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+h1 {
+font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
 .light-gray {
 color: hsl(47, 11%, 84%);
 }
@@ -23,16 +46,61 @@ color: hsl(47, 11%, 84%);
   position: relative;
   top: 4rem;
 }
+
+.new-section {
+display: flex;
+width: 100%;
+justify-content: center;
+}
+
+.site-container {
+display: flex;
+justify-content: space-between;
+width: 960px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.large-img {
+  width: 100%;
+  height: auto;
+  margin: 32px 24px;
+}
+
+.column-large {
+  width: 60%;
+}
+
+.column-medium {
+  width: 35%;
+}
+
 /* Header Styles */
 header {
   font-family: 'Kanit', sans-serif;
   height: 4rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   background-color: hsl(215, 17%, 40%);
   z-index: 100;
+}
+
+header .site-container {
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -76,6 +144,28 @@ nav a:last-child {
 nav a:hover {
   background-color: hsl(215, 17%, 33%);
 }
+
+/* Section 1 : "Learn Something" Styles */
+.button {
+width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  color: hsl(47, 11%, 84%);
+  background-color: hsl(215, 17%, 40%);
+  border-radius: 0.75rem;
+  transition: background-color 0.5s;
+}
+
+.button:hover {
+  background-color: hsl(34, 95%, 35%);
+}
+
+.button a {
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
 
 /* Troubleshooting Styles */
 .box {
