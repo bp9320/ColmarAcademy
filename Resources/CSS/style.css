@@ -1,6 +1,7 @@
 /* General Styles */
 html {
   font-size: 16px;
+  color: 	hsl(252, 5%, 18%);
 }
 
 span {
@@ -13,8 +14,13 @@ a {
   font-size: 0.75rem;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 strong {
-  font-weight: bolder;
+  font-weight: 800;
 }
 
 h1, h2, h3, h4{
@@ -63,6 +69,14 @@ p {
   padding: 2rem 0;
 }
 
+.new-section:nth-of-type(2n) {
+  background-color: hsl(47, 11%, 84%);
+}
+
+.new-section:nth-of-type(2n+1) {
+  background-color: hsl(47, 24%, 79%);
+}
+
 .site-container {
   display: flex;
   justify-content: space-between;
@@ -74,7 +88,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  width: 100%;
 }
 
 .row {
@@ -84,10 +98,10 @@ p {
   width: 100%;
 }
 
-.large-img {
+/*.large-img {
   width: 100%;
   height: auto;
-}
+}*/
 
 .column-large {
   width: 60%;
@@ -123,10 +137,6 @@ header .site-container {
   font-weight: 300;
 }
 
-.logo span strong {
-  font-weight: 800;
-}
-
 .logo img {
   height: 3rem;
   width: auto;
@@ -156,6 +166,10 @@ nav a:hover {
 }
 
 /* Section 1 : "Learn Something" Styles */
+#section1 h3 {
+  margin: 1.5rem 0;
+}
+
 .button {
   width: 100%;
   padding: 0.5rem 0;
@@ -208,6 +222,36 @@ nav a:hover {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
+
+/* Section 3 : "Start Learning" Styles */
+#section3 h1 {
+  margin-bottom: 2rem;
+}
+
+#section3 h3 {
+  margin: 1rem 0 0.5rem 1rem;
+}
+
+#section3 h4 {
+  font-size: 1rem;
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+
+#section3 .row {
+  justify-content: space-around;
+}
+
+#section3 .first-row {
+  margin-bottom: 2rem;
+}
+
+.course {
+  width: 18.67rem;
+  background-color: hsl(47, 11%, 84%);
+  border: 1px hsl(252, 5%, 18%) solid;
+  align-items: flex-start;
+}
+
 
 /* Troubleshooting Styles */
 .box {
