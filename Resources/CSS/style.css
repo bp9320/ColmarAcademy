@@ -252,6 +252,43 @@ nav a:hover {
   align-items: flex-start;
 }
 
+/* Section 4 : "Thesis Exhibit" Styles */
+#section4 .row img {
+  width: 35%;
+  height: auto;
+  margin: 0 0.5rem;
+}
+
+#section4 video {
+  width: 100%;
+  height: auto;
+}
+
+#section4 .row {
+  height: 33%;
+}
+
+#section4 .row .column {
+  width: 65%;
+  align-items: flex-start;
+}
+
+#section4 .column-medium {
+  justify-content: flex-start;
+}
+
+#section4 h4 {
+  margin: 1rem 0;
+}
+
+#section4 p {
+  margin-bottom: 0.5rem;
+}
+
+#section4 h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
 
 /* Troubleshooting Styles */
 .box {
