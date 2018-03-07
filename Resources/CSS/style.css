@@ -255,8 +255,8 @@ nav a:hover {
 /* Section 4 : "Thesis Exhibit" Styles */
 #section4 .row img {
   width: 35%;
-  height: auto;
-  margin: 0 0.5rem;
+  height: 7.349rem;
+  transition: all 0.5s;
 }
 
 #section4 video {
@@ -265,12 +265,19 @@ nav a:hover {
 }
 
 #section4 .row {
+  justify-content: flex-start;
+  position: relative;
   height: 33%;
+  transition: all 0.5s;
+  overflow: hidden;
 }
 
 #section4 .row .column {
   width: 65%;
   align-items: flex-start;
+  position: absolute;
+  margin-left: 36%;
+  transition: margin-left 0.5s;
 }
 
 #section4 .column-medium {
@@ -281,13 +288,34 @@ nav a:hover {
   margin: 1rem 0;
 }
 
+.font-border {
+  text-shadow: 1px 0 hsl(47, 11%, 84%), -1px 0 hsl(47, 11%, 84%), 0 1px hsl(47, 11%, 84%), 0 -1px hsl(47, 11%, 84%);
+}
+
 #section4 p {
   margin-bottom: 0.5rem;
 }
 
 #section4 h2 {
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#section4 .column-medium .row:hover {
+  height: 20.999rem;
+}
+
+#section4 .column-medium .row:hover img {
+  width: 100%;
+  height: 20.999rem;
+}
+
+#section4 .column-medium .row:first-of-type:hover .column {
+  margin-left: 3.675rem;
+}
+
+#section4 .column-medium .row:last-of-type:hover .column {
+  margin-left: 4.763rem;
 }
 
 /* Troubleshooting Styles */
