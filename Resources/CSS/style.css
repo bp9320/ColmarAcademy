@@ -12,6 +12,7 @@ a {
   text-decoration: none;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 0.75rem;
+  color: 	hsl(34, 95%, 35%);
 }
 
 img {
@@ -204,11 +205,16 @@ nav a:hover {
 
 #section2 .row {
   height: 33%;
+  transition: background-color 0.5s;
 }
 
 #section2 .row .column {
   width: 65%;
   align-items: flex-start;
+}
+
+#section2 .row:hover {
+  background-color: hsl(0, 0%, 70%);
 }
 
 #section2 .column-medium {
@@ -252,12 +258,18 @@ nav a:hover {
 
 .course {
   width: 18.67rem;
+  height: 18.484rem;
   background-color: hsl(47, 11%, 84%);
   border: 1px hsl(252, 5%, 18%) solid;
   align-items: flex-start;
+  justify-content: flex-start;
 }
 
 /* Section 4 : "Thesis Exhibit" Styles */
+#section4 .site-container {
+  height: 28.375rem;
+}
+
 #section4 .row img {
   width: 35%;
   height: 7.349rem;
@@ -312,7 +324,7 @@ nav a:hover {
 
 #section4 .column-medium .row:hover img {
   width: 100%;
-  height: 20.999rem;
+  height: 19.609rem;
 }
 
 #section4 .column-medium .row:first-of-type:hover .column {
