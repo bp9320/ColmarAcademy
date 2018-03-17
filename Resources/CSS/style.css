@@ -235,6 +235,16 @@ nav a:hover {
 }
 
 /* Section 3 : "Start Learning" Styles */
+#section3 .site-container {
+  flex-direction: column;
+}
+
+
+#section3 .section-title {
+  width: 100%;
+  text-align: center;
+}
+
 #section3 h1 {
   margin-bottom: 2rem;
 }
@@ -318,21 +328,24 @@ nav a:hover {
   margin-bottom: 0.5rem;
 }
 
-#section4 .column-medium .row:hover {
-  height: 20.999rem;
-}
+/* Hover styles only for tablet and desktop */
+@media only screen and (min-width: 755px) {
+  #section4 .column-medium .row:hover {
+    height: 20.999rem;
+  }
 
-#section4 .column-medium .row:hover img {
-  width: 100%;
-  height: 19.609rem;
-}
+  #section4 .column-medium .row:hover img {
+    width: 100%;
+    height: 19.609rem;
+  }
 
-#section4 .column-medium .row:first-of-type:hover .column {
-  margin-left: 3.675rem;
-}
+  #section4 .column-medium .row:first-of-type:hover .column {
+    margin-left: 3.675rem;
+  }
 
-#section4 .column-medium .row:last-of-type:hover .column {
-  margin-left: 4.763rem;
+  #section4 .column-medium .row:last-of-type:hover .column {
+    margin-left: 4.763rem;
+  }
 }
 
 /* Footer Styles */
@@ -353,8 +366,12 @@ nav a:hover {
 /* Tablet Styles */
 @media only screen and (max-width: 960px) {
   /* General Styles */
+  html {
+    font-size: 12px;
+  }
+
   .site-container {
-    width: 100%;
+    width: 95%;
   }
 
   /* Section 2 : "Keep Practicing" Styles */
@@ -371,17 +388,43 @@ nav a:hover {
   #section2 .column-medium {
     flex-direction: row;
     width: 100%;
+    align-items: flex-start;
   }
 
   #section2 .row {
     flex-direction: column;
-    height: 21.76rem;
   }
 
   #section2 .row img {
     width: 80%;
     margin-bottom: 0.5rem;
   }
+
+
+}
+
+/* Smaller Tablet Styles */
+@media only screen and (max-width: 755px) {
+  /* Section 3: "Start Learning" Styles */
+
+  #section3 .main {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #section3 .row {
+    flex-direction: column;
+  }
+
+  #section3 .row .column:nth-of-type(2) {
+    margin: 1rem 0;
+  }
+
+}
+
+/* Phone Styles */
+@media only screen and (max-width: 614px) {
+
 
 }
 
