@@ -350,6 +350,41 @@ nav a:hover {
   font-size: 1rem;
 }
 
+/* Tablet Styles */
+@media only screen and (max-width: 960px) {
+  /* General Styles */
+  .site-container {
+    width: 100%;
+  }
+
+  /* Section 2 : "Keep Practicing" Styles */
+  #section2 .site-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #section2 .column-large {
+    order: -1;
+    width: 100%;
+  }
+
+  #section2 .column-medium {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  #section2 .row {
+    flex-direction: column;
+    height: 21.76rem;
+  }
+
+  #section2 .row img {
+    width: 80%;
+    margin-bottom: 0.5rem;
+  }
+
+}
+
 /* Troubleshooting Styles */
 .box {
   border: 2px hotpink solid;
