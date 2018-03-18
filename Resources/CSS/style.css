@@ -223,10 +223,14 @@ header .mobile nav img {
 }
 
 /* Section 2 : "Keep Practicing" Styles */
-#section2 .row img {
+#section2 .row .desktop-tablet {
   width: 35%;
   height: auto;
   margin: 0 0.5rem;
+}
+
+#section2 .row .mobile {
+  display: none;
 }
 
 #section2 .row {
@@ -421,9 +425,17 @@ header .mobile nav img {
     flex-direction: column;
   }
 
-  #section2 .row img {
+  #section2 .row .desktop-tablet {
     width: 80%;
     margin-bottom: 0.5rem;
+  }
+
+  #section2 .row .column {
+    margin: 1rem 0;
+  }
+
+  #section2 .column-medium .row:last-of-type .column {
+    margin-bottom: 0;
   }
 
   /* Section 4: "Thesis Exhibit" Styles */
@@ -477,9 +489,41 @@ header .mobile nav img {
     width: 100%;
   }
 
-  #section1 .column-medium {
+
+  /* Section 1 and Section 2 Overlapping Style */
+  #section1 .column-medium, #section2 .column-medium {
     width: 95%;
     margin: 2rem auto 0 auto;
+  }
+
+  /* Section 2: "Keep Practicing" Sty les */
+  #section2 .column-large {
+    display: none;
+  }
+
+  #section2 .column-medium {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  #section2 .row:nth-of-type(2) {
+    margin: 1rem 0;
+  }
+
+  #section2 .row .column {
+    width: 100%;
+  }
+
+  #section2 .row:last-of-type .column a {
+    padding-bottom: 1rem;
+  }
+
+  #section2 .row .desktop-tablet {
+    display: none;
+  }
+
+  #section2 .row .mobile {
+    display: block;
   }
 
 }
