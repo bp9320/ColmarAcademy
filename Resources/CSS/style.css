@@ -496,7 +496,7 @@ header .mobile nav img {
     margin: 2rem auto 0 auto;
   }
 
-  /* Section 2: "Keep Practicing" Sty les */
+  /* Section 2: "Keep Practicing" Styles */
   #section2 .column-large {
     display: none;
   }
@@ -524,6 +524,24 @@ header .mobile nav img {
 
   #section2 .row .mobile {
     display: block;
+  }
+
+  /* Section 3: "Start Learning" Styles */
+  #section3 .main {
+    flex-direction: column;
+  }
+
+  #section3 .first-row {
+    margin-bottom: 1rem;
+  }
+
+  #section3 .row .course {
+    width: 100%;
+    height: 100%;
+  }
+
+  #section3 .course h3 {
+    order: 1;
   }
 
 }
