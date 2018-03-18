@@ -328,8 +328,8 @@ nav a:hover {
   margin-bottom: 0.5rem;
 }
 
-/* Hover styles only for tablet and desktop */
-@media only screen and (min-width: 755px) {
+/* Hover styles only for desktop */
+@media only screen and (min-width: 960px) {
   #section4 .column-medium .row:hover {
     height: 20.999rem;
   }
@@ -398,6 +398,11 @@ nav a:hover {
   #section2 .row img {
     width: 80%;
     margin-bottom: 0.5rem;
+  }
+
+  /* Section 4: "Thesis Exhibit" Styles */
+  #section4 .site-container {
+    height: auto;
   }
 
 
