@@ -193,7 +193,6 @@ header .mobile nav img {
   padding: 0 0.5rem;
 }
 
-}
 /* Section 1 : "Learn Something" Styles */
 #section1 h3 {
   margin: 1.5rem 0;
@@ -467,6 +466,20 @@ header .mobile nav img {
 
   header .mobile {
     display: inline-block;
+  }
+
+  /* Section 1: "Learn Something" Styles */
+  #section1 .site-container {
+    flex-direction: column;
+  }
+
+  #section1 .column-large {
+    width: 100%;
+  }
+
+  #section1 .column-medium {
+    width: 95%;
+    margin: 2rem auto 0 auto;
   }
 
 }
