@@ -275,10 +275,6 @@ header .mobile nav img {
   text-align: center;
 }
 
-#section3 h1 {
-  margin-bottom: 2rem;
-}
-
 #section3 h3 {
   margin: 1rem 0 0.5rem 1rem;
 }
@@ -305,12 +301,23 @@ header .mobile nav img {
   justify-content: flex-start;
 }
 
+/* Shared Section 3 and Section 4 style */
+#section3 h1, #section4 h1 {
+  margin-bottom: 2rem;
+}
+
 /* Section 4 : "Thesis Exhibit" Styles */
 #section4 .site-container {
+  /*height: 28.375rem;*/
+  flex-direction: column;
+  align-items: center;
+}
+
+#section4 .site-container .row {
   height: 28.375rem;
 }
 
-#section4 .row img {
+#section4 .column-medium .row img {
   width: 35%;
   height: 7.349rem;
   transition: all 0.5s;
@@ -321,7 +328,7 @@ header .mobile nav img {
   height: auto;
 }
 
-#section4 .row {
+#section4 .column-medium .row {
   justify-content: flex-start;
   position: relative;
   height: 33%;
@@ -329,7 +336,7 @@ header .mobile nav img {
   overflow: hidden;
 }
 
-#section4 .row .column {
+#section4 .column-medium .row .column {
   width: 65%;
   align-items: flex-start;
   position: absolute;
@@ -339,6 +346,7 @@ header .mobile nav img {
 
 #section4 .column-medium {
   justify-content: flex-start;
+  height: 100%;
 }
 
 #section4 h4 {
@@ -361,7 +369,7 @@ header .mobile nav img {
 /* Hover styles only for desktop */
 @media only screen and (min-width: 960px) {
   #section4 .column-medium .row:hover {
-    height: 20.999rem;
+    height: 19.609rem;
   }
 
   #section4 .column-medium .row:hover img {
@@ -541,8 +549,8 @@ header .mobile nav img {
   }
 
   #section3 .course h3 {
-    order: 1;
-    margin: 1rem 0 1rem 0.5rem;
+    /*order: 1;*/
+    margin: 1rem 0 1rem 1rem;
   }
 
   #section3 .course img, #section3 .course h4 {
@@ -551,6 +559,32 @@ header .mobile nav img {
 
   #section3 .course:hover img, #section3 .course:hover h4 {
     display: block;
+  }
+
+  /* Section 4: "Thesis Exhibit" Styles */
+  #section4 .site-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #section4 .site-container .row {
+    height: auto;
+  }
+
+  #section4 .column-large {
+    width: 100%;
+  }
+
+  #section4 .column-large h2, #section4 .column-large p, #section4 .column-medium {
+    display: none;
+  }
+
+  /* Footer Styles */
+  .footer .copywrite {
+    font-size: 12px;
+  }
+  .footer .footer-nav {
+    display: none;
   }
 
 }
